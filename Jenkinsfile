@@ -53,7 +53,7 @@ pipeline {
           ]
         ) {
             sh """
-            curl -H 'Authorization: ${ghtoken}' "https://api.github.com/users/${ghuser}/repos" | grep -o 'git@[^"]*'
+            curl -H "Authorization: ${ghtoken}" "https://api.github.com/users/${ghuser}/repos" | grep -o "git@[^\"]*"
             """
           }   
       }
