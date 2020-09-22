@@ -30,6 +30,7 @@ pipeline {
             -H "Content-Type: application/vnd.api+json" \
             -X GET https://app.terraform.io/api/v2/organizations/${env.tfeorg}/workspaces
             echo 'Hello'
+            """
           }
       }
     }
