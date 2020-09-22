@@ -1,7 +1,7 @@
 pipeline {
   agent any
   parameters {
-    string(name: 'vaulturl', defaultValue: 'http://localhost:8200', description: 'Vault API URL')
+    string(name: 'vaulturl', defaultValue: 'http://vault.vault.svc.cluster.local:8200', description: 'Vault API URL')
     string(name: 'vaultpath', defaultValue: 'kv/cicd', description: 'Secrets path for Vault secrets')
   }
   stages {
