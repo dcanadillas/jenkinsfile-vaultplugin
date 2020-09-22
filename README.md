@@ -1,4 +1,4 @@
-# Jenkins and Vault pipelne example
+# Jenkins and Vault pipeline example
 
 This is a pipeline example that using your secrets in a Vault instance it is able to:
 * Connects to your GitHub account by `curl`request to list your repos
