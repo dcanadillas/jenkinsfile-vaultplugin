@@ -19,12 +19,12 @@ pipeline {
               path: "${params.vaultpath}", 
               secretValues: [
                 [envVar: 'tfetoken', vaultKey: 'tfe_token'],
-                [envVar: 'tfeorg', vaultKey: 'tfe_token']
+                [envVar: 'tfeorg', vaultKey: 'tfe_org']
               ]
             ]
           ]
         ) {
-            echo "${env.tfe_token}"
+            echo "${env.tfetoken}"
             sh """
             curl -H "Authorization: Bearer ${env.tfetoken}" \
             -H "Content-Type: application/vnd.api+json" \
