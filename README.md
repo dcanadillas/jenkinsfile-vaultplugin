@@ -20,7 +20,7 @@ You need to have an account in Terraform Cloud (TFC) and a Vault server running.
 Once you have TFC account and Vault running:
 
 * Create some tokens in your TFC Org:
-  - Create an [organization token]({"data":{"gh_user"="dcanadillas"}}
+  - Create an [organization token](https://www.terraform.io/docs/cloud/users-teams-organizations/api-tokens.html#organization-api-tokens)
   - Create a [team token](https://www.terraform.io/docs/cloud/users-teams-organizations/api-tokens.html#team-api-tokens)
 * Change the values in the included file `secrets.json` with your values (GitHub token, TFC tokens and TFC org name)
 * Create your secrets in Vault (here are the commands, but you can do it in the UI):
